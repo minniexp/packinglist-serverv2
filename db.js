@@ -1,6 +1,6 @@
 const mongoose = require("mongoose")
 
-const uri = REACT_APP_DATABASE_URI
+const uri = process.env.DATABASE_URI
 
 // mongoose.connect(string, json)  // async 
 const connectDB = async () => {
